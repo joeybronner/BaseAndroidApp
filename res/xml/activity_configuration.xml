@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+ <PreferenceCategory
+   android:summary="Informations générales"
+   android:title="Tes informations" >
+   
+  <EditTextPreference
+     android:key="prenom"
+     android:summary="Textbox à compléter"
+     android:title="Txtbox" />
+  <EditTextPreference
+     android:key="urgencenum"
+     android:summary="Textbox à compléter"
+     android:title="Txtbox" />
+ </PreferenceCategory>
+ 
+ <PreferenceCategory
+   android:summary="Configuration des alarmes"
+   android:title="Configuration" >
+  
+	<CheckBoxPreference
+	     android:key="serviceSMS"
+	     android:summary="Envoi d'un SMS en cas d'alarme incendie"
+	     android:defaultValue="true"
+	     android:title="Titre de la checkbox">
+	</CheckBoxPreference>
+
+ </PreferenceCategory>
+ 
+  <PreferenceCategory
+   android:summary="Fréquence sonore à détecter"
+   android:title="Autres" >
+ 
+	<ListPreference
+	     android:entries="@array/listEntries"
+	     android:entryValues="@array/listDetail"
+	     android:key="listEntr"
+	     android:summary="Liste avec radio (choix unique)"
+	     android:title="Listbox">
+	</ListPreference>
+	
+  </PreferenceCategory>
+ 
+</PreferenceScreen>

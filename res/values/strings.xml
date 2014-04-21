@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app name -->
+    <string name="app_name">BaseAndroidApp</string> 
+
+    <!-- action bar menu title -->
+    <string name="menu_about">About</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- view's title -->
+    <string name="title_vue1">Vue1</string>
+    <string name="title_vue2">Vue2</string>
+    <string name="title_vue3">Vue3</string>  
+
+</resources>

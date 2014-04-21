@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <!--  HERE, ALL THE APP PERMISSIONS
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_GPS" />	
+	<uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />	
+	<uses-permission android:name="android.permission.LOCATION" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+    	<!-- Home view -->
+        <activity
+            android:name="com.app.Home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- view Vue1 -->
+        <activity
+            android:name="com.app.Vue1"
+            android:label="@string/title_vue1"
+            android:parentActivityName="com.app.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.Home" />
+        </activity>
+        
+        <!-- view Vue2 -->
+        <activity
+            android:name="com.app.Vue2"
+            android:label="@string/title_vue2"
+            android:parentActivityName="com.app.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.Home" />
+        </activity>
+        
+        <!-- view Vue3 -->
+        <activity
+            android:name="com.app.Vue3"
+            android:label="@string/title_vue3"
+            android:parentActivityName="com.app.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.Home" />
+        </activity>
+        
+    </application>
+
+</manifest>
